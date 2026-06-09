@@ -1,11 +1,15 @@
+
 class Counter {
+
     int count = 0;
+
     synchronized void increment() {
         count++;
     }
 }
 
 public class SynchronizationDemo {
+
     public static void main(String[] args) throws Exception {
         Counter c = new Counter();
         Thread t1 = new Thread(() -> {
